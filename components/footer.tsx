@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const navLinks = [
@@ -15,11 +16,15 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-8 md:flex-row md:justify-between md:text-left">
           <div>
-            <span className="font-serif text-lg font-bold tracking-wider text-foreground">
-              山田食品
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt="グランフーズ株式会社"
+              width={140}
+              height={36}
+              className="h-8 w-auto object-contain brightness-0"
+            />
             <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-              山田食品株式会社
+              グランフーズ株式会社
             </p>
           </div>
 
@@ -38,7 +43,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-border pt-6 text-center sm:mt-10 sm:pt-8">
           <p className="text-xs text-muted-foreground">
-            {'© 2026 山田食品株式会社 All rights reserved.'}
+            {'© 2026 グランフーズ株式会社 All rights reserved.'}
           </p>
         </div>
       </div>

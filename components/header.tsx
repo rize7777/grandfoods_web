@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 
@@ -33,13 +34,16 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="#hero" className="flex items-center gap-2">
-          <span
-            className={`font-serif text-xl font-bold tracking-wider transition-colors duration-500 ${
-              scrolled ? "text-foreground" : "text-background"
+          <Image
+            src="/images/logo.png"
+            alt="グランフーズ株式会社"
+            width={160}
+            height={40}
+            className={`h-9 w-auto object-contain transition-all duration-500 ${
+              scrolled ? "brightness-0" : "brightness-0 invert"
             }`}
-          >
-            山田食品
-          </span>
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
