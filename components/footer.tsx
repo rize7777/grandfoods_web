@@ -19,13 +19,10 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt="グランフーズ株式会社"
-              width={140}
-              height={36}
-              className="h-8 w-auto object-contain brightness-0"
+              width={160}
+              height={42}
+              className="h-10 w-auto object-contain"
             />
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-              グランフーズ株式会社
-            </p>
           </div>
 
           <nav className="grid grid-cols-2 gap-x-6 gap-y-3 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-3">
